@@ -1,11 +1,11 @@
-Databases and object-oriented programming in PHP (oophp)
+JavaScript, jQuery and AJAX with HTML5 and PHP (javascript)
 ===================
 
 Course material for course, aimed at a swedish target audience being software engineering / computer science students at University level. 
 
 Relased as part of a University course presented at:
 
-* http://dbwebb.se/oophp
+* http://dbwebb.se/javascript
 
 The usage of this repo is also documented here (in swedish):
 
@@ -28,9 +28,9 @@ Feel free to help builing up the repository with more content suited for trainin
 History
 -------------------
 
-v0.0.0x (2015-10-01)
+v0.0.0x (2015-10-29)
 
-* Started work in october 2015, planned release early 2017.
+* Started work in November 2015, no planned release date.
 
 
 
