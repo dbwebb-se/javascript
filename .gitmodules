@@ -1,0 +1,3 @@
+[submodule "javascript-solution"]
+	path = .solution
+	url = git@bitbucket.org:mosbth/javascript-solution.git
