@@ -8,8 +8,8 @@
 	"disallowKeywords": [ "with" ],
 	"requireLineFeedAtFileEnd": true,
 	"validateLineBreaks": "LF",
-	"requireSpaceBeforeBinaryOperators": true,
-	"requireSpaceAfterBinaryOperators": true,
+	"requireSpaceBeforeBinaryOperators": null,
+	"requireSpaceAfterBinaryOperators": null,
 	"disallowSpaceBeforeBinaryOperators": [","],
 	"requireSpacesInConditionalExpression": {
 		"afterTest": true,
