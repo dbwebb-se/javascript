@@ -59,7 +59,7 @@
 
 
 <script data-role="slide" type="text/html">
-<iframe width="1024" height="768" src="https://www.youtube.com/embed/47Ceot8yqeI" frameborder="0" allowfullscreen></iframe>
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/JxAXlJEmNMg" frameborder="0" allowfullscreen></iframe>
 </script>
 
 
@@ -79,6 +79,7 @@
 <script data-role="slide" data-markdown type="text/html">
 #ECMAScript ECMA-262
 
+* Edition 1 påbörjades 1996
 * Edition 3 publicerades 1999
 * Edition 4 övergavs
 * Edition 5 publicerades 2009
@@ -117,7 +118,7 @@ En identifierare börjar med en bokstav a-z, A-Z, understreck _ eller dollarteck
 
 
 <script data-role="slide" data-markdown type="text/html">
-#Literaler
+#`typeof()`
 <img src="img/js-literals.png" width="1024px" />
 </script>
 
@@ -135,9 +136,10 @@ En identifierare börjar med en bokstav a-z, A-Z, understreck _ eller dollarteck
 <script data-role="slide" data-markdown type="text/html">
 #Datatyper och objekt
 
-* Grundtyper `number`, `string`, `boolean`, `Object`
+* Grundtyper `number`, `string`, `boolean`, `object`
 * `Number`, `String`, `Boolean`, `Function`, `Array`, `RegExp` är specialisering av `Object`
 * Samt `undefined` och `null`
+* Nya typer tillkommer i ES6
 </script>
 
 
@@ -147,7 +149,7 @@ En identifierare börjar med en bokstav a-z, A-Z, understreck _ eller dollarteck
 
 * Objektet `Number` innehåller utilities
 * `Math.PI`, `Math.random`, ...
-* `Nan` not a number
+* `NaN` not a number
 * Kika på [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) och [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 </script>
 
@@ -193,7 +195,7 @@ En identifierare börjar med en bokstav a-z, A-Z, understreck _ eller dollarteck
 * Använd literalen
 * false - false, 0, empty string (“”), NaN, null, undefined
 * true - allt annat
-* Omvandla till boolean med !!
+* Omvandla godtyckligt värde till boolean med !!
 
 </script>
 
@@ -230,11 +232,11 @@ val = square(x)
 </script>
 
 <script id="c2" data-role="code" data-language="javascript" type="text/html">
-// Funktions literal, 
+// Funktions literal/expression, 
 // funktionen tilldelas en variabel
 var square = function (x) {     
     return x*x;                   
-}
+};
 val = square(x)
 </script>
 
@@ -250,7 +252,7 @@ val = square(x)
 // som eventhanterare.
 element.onclick = function () {  
     alert('Hello');               
-}
+};
 </script>
 
 
@@ -453,6 +455,25 @@ window.Mos = (function(window, undefined) {
 })(window);
  
 Mos.random(1, 6);
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+#Variable declarations
+<pre data-code="c20"></pre>
+</script>
+
+<script id="c20" data-role="code" data-language="javascript" type="text/html">
+//Like this
+var variable1 = "Hello World!";
+var variable2 = "Testing...";
+var variable3 = 42;
+
+// or like this
+var variable1 = "Hello World!",
+    variable2 = "Testing...",
+    variable3 = 42;
 </script>
 
 
