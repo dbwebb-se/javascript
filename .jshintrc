@@ -2,7 +2,7 @@
   "esnext":true,
   "undef": true,
   "unused": true,
-  "predef": ["console", "window", "document", "require", "__dirname", "$", "jQuery"],
+  "predef": ["console", "window", "document", "require", "__dirname", "$", "jQuery", "Mos"],
   "laxbreak": true,
   "loopfunc": true,
   "mocha": true,
