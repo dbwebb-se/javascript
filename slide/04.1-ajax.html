@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8" />
+<title>AJAX</title>
+
+<!-- Mithril HTML Slideshow styles -->
+<link href="css/mithril-slideshow.css" rel="stylesheet" />
+<link href="css/theme-dark.css" rel="alternate stylesheet" title="Dark"/>
+<link href="css/theme-light.css" rel="alternate stylesheet" title="Light" />
+
+<!-- Code formatting using highlight.js -->
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/tomorrow.css">
+<script src="js/highlight.pack.js"></script>
+
+<!-- Text formatting using Markdown through showdown.js -->
+<script src="js/showdown.min.js"></script>
+
+
+
+<!-- Here comes the slides in order -->
+<script data-role="slide" data-markdown type="text/html">
+#javascript kmom04
+##Programmera med JavaScript
+###Mikael Roos
+</script>
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Agenda
+##Ajax
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Uppgift
+
+##Bokhandel
+
+* Samla all din kod för kundvagnen och checkout-hanteringen. På din me-sida gör du en egen liten webbshop där du använder kundvagnen och utchecknings-sidan. Integrera det på ett bra sätt med resten av din me-sida.
+* Nackdel, för mycket kod finns tillgängligt.
+* Bra övning i Ajax, form, post, session.
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+<iframe style="background-color: #fff;" src="http://dbwebb.se/javascript/lekplats/get-marvin-quotes-using-ajax/" width="1024" height="768" frameborder="0"></iframe>
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#[Pröva Marvin](http://dbwebb.se/javascript/lekplats/get-marvin-quotes-using-ajax/)
+
+* `ajax()`
+* `getJSON()`
+* quote.php
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Felsök Ajax
+
+* Hämta requesten direkt
+* Kolla formatet JSON
+* Devtools console, network
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Resumé Ajax
+
+* -96 då IE introducerade iframe
+* -98 Micorsoft XMLHTTP
+* -05 "Ajax: A new approach to web applications"
+* IRC-chattklient long polling, Gmail, Lightbox/Gallerier, ajax-navigering mellan sidor
+* Fler typer av ajax-aplikationer?
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Resumé Ajax
+
+* Graceful degradation &amp; Progressive enhancement
+* Sökmotoroptimering &amp; screen readers
+* Network response times
+* Asynkron programmeringsmodell
+* Same origin policy, jsonp, HTML5 XMLHttpRequest Level 2
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Dagens applikationer
+
+* Node.js, npm
+* Webappar mobiler, tv, spel, addons till webbläsare, småappar till OS
+* Vad är en "modern arkitektur"?
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#[Flarum](https://discuss.flarum.org/)
+
+<iframe width="1120" height="630" src="https://discuss.flarum.org/" frameborder="0" allowfullscreen></iframe>
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Klientfokuserad kod
+
+* HTML, CSS, JavaScript
+* Organisera kod som MVC på klienten
+* RESTful API från servern
+* GUI med automatisk uppdatering, ViewModels
+* SPA, single page application
+* Webbappar som native på mobiler
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#[Beställ fisk från meny](http://catchoftheday.wesbos.com/)
+
+<iframe width="1120" height="630" src="http://catchoftheday.wesbos.com/" frameborder="0" allowfullscreen></iframe>
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#WordPress goes React
+
+* [Clearing the air: Is WordPress being rewritten in Node.js and React?](http://wesbos.com/wordpress-calypso-react/)
+* [About this (from WP dev)](https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/)
+
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#RESTful API
+
+* HTTP requester GET, POST, PUT, DELETE
+* Svar i JSON (JSON RFC 4627)
+* Client - Server
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Crockford om JSON
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/kc8BAR7SHJI" frameborder="0" allowfullscreen></iframe>
+</script>
+
+
+
+<!-- slide -->
+<script data-role="slide" data-markdown type="text/html">
+#Övning RESTful och JSON
+
+* [webapp/kmom03](http://dbwebb.se/webapp/kmom03) (RESTful tools, jq)
+* [example/ajax](http://dbwebb.se/webapp/repo/example/ajax/) (caching)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+#Frågor på det?
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+</script>
+
+
+
+<!-- include essential js-script -->
+<script src="js/mithril.min.js"></script>
+<script src="js/mithril-slideshow.js"></script>
