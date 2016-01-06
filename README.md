@@ -1,6 +1,8 @@
 JavaScript, jQuery and AJAX with HTML5 and PHP (javascript)
 ===================
 
+[![Join the chat at https://gitter.im/mosbth/javascript](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mosbth/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Course material for course, aimed at a swedish target audience being software engineering / computer science students at University level. 
 
 Relased as part of a University course presented at:
