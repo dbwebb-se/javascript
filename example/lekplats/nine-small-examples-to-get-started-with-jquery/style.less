@@ -1,0 +1,65 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+@the-width:(250*3+2*@magic-number*2+6);
+
+.box{position:relative;.clearfix();width:250px;float:left;margin-right:@magic-number;padding:@magic-number/2;border:1px solid #eee;.border-radius(10px);margin-bottom:@magic-number;
+  img{float:right;padding-left:1em;padding-bottom:1em;}
+  //&:hover,h1:hover,p:hover,img:hover{cursor:pointer;}
+  h1:hover,p:hover,img:hover{cursor:pointer;}
+  h1{color:#666;}
+  .minimize{z-index:10;position:absolute;top:4px;left:(@the-width);height:6px;line-height:0;padding:3px;margin:0;border:2px solid #999;.border-radius(2px);color:#999;
+    &:hover{cursor:pointer;}
+  }
+  &.fullwidth{width:@the-width;}
+    .example, .minimize, p, form, div{display:none;}
+  }
+
+.dark{background-color:#333;color:#eee;}
+.pink{background-color:pink;color:white;}
+.thumbnail{width:80px;}
+div.palette{height:40px;width:40px;border:1px solid #ccc;float:left;margin:2px;display:block;
+  &:hover{cursor:crosshair;}
+}
+
+
+// Lightbox
+#overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:998;
+background:#000 url(/img/loader.gif) no-repeat scroll center center;}
+#lightbox{position:fixed;z-index:999;}
+
+
+// Gallery 
+@gallery-padding: 10px;
+@gallery-width: 600px;
+@gallery-height: @gallery-width / (4/3) + @gallery-padding * 3px;
+@gallery-bg-color: #333;
+@gallery-small-image-size: 40px; 
+
+.gallery{width:@gallery-width;min-height:@gallery-height;padding:@gallery-padding;
+background-color:@gallery-bg-color;margin:0 auto;margin-bottom:1em;
+  .gallery-current{height:@gallery-height - 80 - @gallery-padding*3;width:@gallery-width - @gallery-padding*2;margin:0 auto;margin-bottom:@gallery-padding;
+    img{display:block;margin:0 auto;padding:0;float:none;}
+  }
+  .gallery-all{.clearfix();width:@gallery-width - @gallery-padding*2;margin:0 auto;
+    img{float:left;border:1px solid transparent;padding:3px;width:@gallery-small-image-size;height:@gallery-small-image-size;
+      &:hover, &.selected{border-color:#eee;}
+    }
+  }
+}
+
+
+// Slideshow
+@slideshow-width: 800px;
+@slideshow-height: 200px;
+@slideshow-bg-color: #eee;
+@slideshow-z-index: 10;
+
+.slideshow{width:@slideshow-width;height:@slideshow-height;background-color:@slideshow-bg-color;position:relative;z-index:@slideshow-z-index;
+  img{margin:0;padding:0;position:absolute;width:@slideshow-width;height:@slideshow-height;}
+}

@@ -1,0 +1,23 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+/** --------------------------------------------------------------
+ * Baddie from CSS sprite.
+ * 
+ */
+#b1{position:absolute;}
+
+.baddie{width:64px;height:64px;background-image:url(/img/sprite_mickey_mos.png);
+  .transition-property(e('left,top'));.transition-duration(0.2s);.transition-timing-function(ease);
+  &.up{background-position:64px 0;}
+  &.down{background-position:128px 0px;}
+  &.left{background-position:192px 0;}
+  &.right{background-position:0 0;}
+}
+

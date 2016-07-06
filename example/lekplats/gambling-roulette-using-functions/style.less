@@ -1,0 +1,38 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+.number-look(@color){
+  float:left;
+  color:#fff;
+  background-color:@color;
+  border:2px solid darken(@color, 10%);
+  text-align:center;
+  .border-radius(40px);
+  top:10px;
+  margin:2px;
+  font-size:1.2em;
+}
+
+#flash{position:relative;height:300px;}
+
+#table{width:212px;height:500px;position:absolute;top:-20px;left:700px;padding-left:2px;
+border:2px solid darken(@green, 20%);background-color:@green;.box-shadow();.border-radius();}
+
+#status{width:600px;height:50px;position:absolute;top:50px;}
+
+#log{width:600px;height:200px;position:absolute;top:102px;overflow:auto;}
+
+.number{width:60px;height:30px;.transition(all,0.3s);
+  &.green{.number-look(@green);width:196px;}
+  &.red{.number-look(@red);}
+  &.black{.number-look(@black);}
+  &.selected{font-weight:bold;border-color:#fefefe;font-size:1.25em;}
+}
+
+input,select{font-size:inherit;width:6em;}
+input[type=number]{text-align:right;width:4em;}

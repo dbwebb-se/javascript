@@ -1,0 +1,54 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+
+/** --------------------------------------------------------------
+ * Baddie from CSS sprite.
+ * 
+ */
+@tile-size:32px;
+@tile-offset:34px;
+#flash{width:@tile-size*24;height:@tile-size*24;}
+#baddie1{position:absolute;}
+
+.baddie{z-index:10;width:@tile-size;height:@tile-size;background-image:url(/img/tiles/tiles1.png);background-repeat:no-repeat;
+  .transition-property(e('left,top'));.transition-duration(0.2s);.transition-timing-function(ease);
+  &.up{background-position:-@tile-offset*3 0;}
+  &.down{background-position:-@tile-offset*2 0;}
+  &.left{background-position:-@tile-offset*1 0;}
+  &.right{background-position:0 0;}
+}
+
+
+/** --------------------------------------------------------------
+ * Boulder Dash Gameplan
+ * 
+ */
+//@bgcolor:green;
+.tile, .t, .block, .b{width:@tile-size;height:@tile-size;float:left;background-repeat:no-repeat;}
+.t12{background-image:url(/img/tiles/floor/grass0.png);}
+.t13{background-image:url(/img/tiles/floor/grass1.png);}
+.t14{background-image:url(/img/tiles/floor/grass2.png);}
+.t15{background-image:url(/img/tiles/floor/grass_flowers_red3.png);}
+.t16{background-image:url(/img/tiles/floor/grass_flowers_blue3.png);}
+.t17{background-image:url(/img/tiles/floor/grass_flowers_yellow3.png);}
+.t18{background-image:url(/img/tiles/floor/grass_n.png);}
+.t19{background-image:url(/img/tiles/floor/grass_nw.png);}
+.t20{background-image:url(/img/tiles/floor/grass_w.png);}
+.t21{background-image:url(/img/tiles/floor/grass_full.png);}
+.t22{background-image:url(/img/tiles/floor/grass_sw.png);}
+.t23{background-image:url(/img/tiles/floor/grass_s.png);}
+
+.b11{background-image:url(/img/tiles/wall/dngn_metal_wall.png);}
+.b12{background-image:url(/img/tiles/wall/crystal_wall02.png);}
+.b13{background-image:url(/img/tiles/wall/dngn_mirrored_wall.png);}
+.b14{background-image:url(/img/tiles/wall/dngn_green_crystal_wall.png);background-color:green;}
+.b17{background-image:url(/img/tiles/passage/dngn_open_door.png);background-color:#bbb;}
+.b18{background-image:url(/img/tiles/passage/dngn_closed_door.png);}
+.b19{background-image:url(/img/tiles/wall/brick_brown-vines1.png);}

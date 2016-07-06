@@ -1,0 +1,30 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+/** --------------------------------------------------------------
+ * Baddie from CSS sprite.
+ * 
+ */
+.baddie{cursor:pointer;width:64px;height:64px;background-image:url(/img/sprite_mickey_mos.png);.transition(all,1.5s);
+  &.up{background-position:64px 0;}
+  &.down{background-position:128px 0px;}
+  &.left{background-position:192px 0;}
+  &.right{background-position:0 0;}
+  &.flip{.rotate(180deg);}
+  &.flipx2{.rotate(-540deg);}
+  &.size-half{.scale(0.5);}
+  &.size-double{.scale(2);}
+  &.skew-horisontal{.skew(30deg,0);}
+  &.skew-vertical{.skew(0,30deg);}
+  &.skew-vertical{.skew(0,30deg);}
+  &.move{.translate(100px,100px);}
+  &.move-flip{.transform(e('rotate(180deg) translate(100px,100px)'));}
+}
+
+td{width:140px;}

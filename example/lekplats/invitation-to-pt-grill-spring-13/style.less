@@ -1,0 +1,49 @@
+/**
+ * Import base style
+ */
+@import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+/** --------------------------------------------------------------
+ * Baddie from CSS sprite.
+ * 
+ */
+#b1{position:absolute;}
+
+.baddie{width:64px;height:64px;background-image:url(/img/sprite_mickey_mos.png);
+  .transition-property(e('left,top'));.transition-duration(0.2s);.transition-timing-function(ease);
+  &.up{background-position:64px 0;}
+  &.down{background-position:128px 0px;}
+  &.left{background-position:192px 0;}
+  &.right{background-position:0 0;}
+}
+
+#flash {
+  position: relative;
+
+  p.intro {
+    min-height: 400px;
+  }
+}
+
+#bubble {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  background-image: url(http://dbwebb.se/img/extra/bubble.png);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+
+  &::after{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    font-size: 8px;
+    color: pink;
+    content: "aHR0cDovL2Rid2ViYi5zZS90bXAvZ3JyaWxsLXZ0MTMv";
+  }
+}
