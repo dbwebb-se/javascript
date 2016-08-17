@@ -21,14 +21,14 @@ This is a co-effort of several people using freely available documentation and t
 
 For contributors, see the commit history and the issues.
 
-Feel free to help builing up the repository with more content suited for training and education.
+Feel free to help building up the repository with more content suited for training and education.
 
 
 
 History
 -------------------
 
-v0.0.0x (2015-10-29)
+v1.0.0 (2016-08-17)
 
 * Started work in November 2015, no planned release date.
 
@@ -36,5 +36,5 @@ v0.0.0x (2015-10-29)
 
 ```                                                            
  .                                                             
-..:  Copyright (c) 2015 Mikael Roos, me@mikaelroos.se   
+..:  Copyright (c) 2015 - 2016 Mikael Roos, me@mikaelroos.se   
 ```                                                            
