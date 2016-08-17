@@ -1,6 +1,7 @@
 JavaScript, jQuery and AJAX with HTML5 and PHP (javascript)
 ===================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mosbth/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 [![Build Status](https://travis-ci.org/dbwebb-se/javascript.svg?branch=master)](https://travis-ci.org/dbwebb-se/javascript)
 [![CircleCI](https://circleci.com/gh/dbwebb-se/javascript.svg?style=svg)](https://circleci.com/gh/dbwebb-se/javascript)
 
