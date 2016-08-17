@@ -1,6 +1,9 @@
 JavaScript, jQuery and AJAX with HTML5 and PHP (javascript)
 ===================
 
+[![Build Status](https://travis-ci.org/dbwebb-se/javascript.svg?branch=master)](https://travis-ci.org/dbwebb-se/javascript)
+[![CircleCI](https://circleci.com/gh/dbwebb-se/javascript.svg?style=svg)](https://circleci.com/gh/dbwebb-se/javascript)
+
 Course material for course, aimed at a swedish target audience being software engineering / computer science students at University level. 
 
 Relased as part of a University course presented at:
