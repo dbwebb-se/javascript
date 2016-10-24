@@ -1,6 +1,6 @@
 <?php
   $d = explode("/", trim($path, "/"));
-  $srcUrl = '../source.php?dir=' . end($d) . '&amp;file=' . basename($_SERVER["PHP_SELF"]) . '#file';
+  $srcUrl = '../source.php?path=' . end($d) . '/' . basename($_SERVER["PHP_SELF"]) . '#file';
 ?>
 
 <footer id='footer'>
