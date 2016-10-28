@@ -66,7 +66,7 @@ Discover  6011xx  16
 
 
 // Include CForm & Create a class for payment-form with name, email and phonenumber.
-include('../../../kod-exempel/cform/CForm.php');
+include('CForm.php');
 $currentYear = date('Y');
 $elements = array(
   'payment' => array(
