@@ -1,20 +1,17 @@
 /**
  * Animate using timeout.
  */
- window.onload = function() {
-      "use strict";
+window.onload = function() {
+    "use strict";
 
-      var html,
-          button = document.getElementById("button"),
-          gameArea,
-          gameBlocks;
+    var button = document.getElementById("button");
 
 
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function() {
         var colors = ['green', 'yellow', 'red', 'blue', 'pink'],
             step = 0,
 
-        animateFunction = function () {
+        animateFunction = function() {
             if (step === colors.length) {
                 button.style.backgroundColor = '';
             } else {

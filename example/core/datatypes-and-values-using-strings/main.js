@@ -1,19 +1,18 @@
 /**
  * Work with strings.
  */
- window.onload = function() {
+window.onload = function() {
     "use strict";
 
-    var html,
-        str,
-        value,
-        pos,
-        element = document.getElementById('flash');
-         
+    var html;
+    var str;
+    var pos;
+    var element = document.getElementById('flash');
+
     console.log('Starting');
 
     // Make a html string to contain all examples in a ul/li list
-    html  = "<p>String concatenation</p><ul>";
+    html = "<p>String concatenation</p><ul>";
 
     str = "\u00A9";
     html += "<li>" + str + " (" + str.length + ")";
@@ -29,11 +28,11 @@
 
     str = str + ".";
     html += "<li>" + str + " (" + str.length + ")";
-     
+
     pos = 15;
     str = str.substr(0, pos) + str.substring(pos + 4, str.length);
     html += "<li>" + str + " (" + str.length + ")";
-     
+
     html += "</ul>";
     element.innerHTML = html;
 

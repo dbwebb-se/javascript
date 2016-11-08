@@ -4,12 +4,11 @@
 window.onload = function() {
     "use strict";
 
-    var html,
-        element = document.getElementById('flash'),
-        myBall = {},
-        ballElement;
+    var html;
+    var element = document.getElementById('flash');
+    var myBall = {};
 
-    html  = "<p>Click inside this area to move the ball.</p>";
+    html = "<p>Click inside this area to move the ball.</p>";
     html += "<div id='ball' class='ball'></div>";
     element.innerHTML = html;
 
@@ -23,7 +22,7 @@ window.onload = function() {
     /**
      * Print details of ball position.
      */
-    myBall.print = function() {
+    myBall.print = function () {
         console.log("Ball position is: " + this.position.x + "x" + this.position.y);
     };
 
@@ -35,11 +34,11 @@ window.onload = function() {
      */
     myBall.init = function () {
         console.log("init");
-        this.HTMLelement.style.position  = "absolute";
+        this.HTMLelement.style.position = "absolute";
         this.HTMLelement.style.backgroundImage = "url(" + this.image + ")";
-        this.HTMLelement.style.left   = this.position.x + "px";
-        this.HTMLelement.style.top    = this.position.y + "px";
-        this.HTMLelement.style.width  = this.dimension.w + "px";
+        this.HTMLelement.style.left  = this.position.x + "px";
+        this.HTMLelement.style.top   = this.position.y + "px";
+        this.HTMLelement.style.width = this.dimension.w + "px";
         this.HTMLelement.style.height = this.dimension.h + "px";
         this.HTMLelement.style.transition = "left 0.5s, top 0.5s";
         this.draw();
@@ -50,7 +49,7 @@ window.onload = function() {
     /**
      * Draw the ball.
      */
-    myBall.draw = function (x, y) {
+    myBall.draw = function () {
         console.log("draw");
         this.HTMLelement.style.left = this.position.x + "px";
         this.HTMLelement.style.top = this.position.y + "px";
@@ -67,7 +66,7 @@ window.onload = function() {
         this.position.x = x;
         this.position.y = y;
         this.draw();
-  };
+    };
 
 
 

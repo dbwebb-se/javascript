@@ -2,18 +2,18 @@
  * Boulder dash.
  */
 window.onload = function() {
-     "use strict";
+    "use strict";
 
-     var html,
-         area = document.getElementById("flash"),
-         gameArea,
-         gameBlocks;
+    var area = document.getElementById("flash");
+    var gameArea;
+    var gameBlocks;
 
 
 
     /**
      * This is the background for the game area.
      */
+    // jscs:disable requireSpaceAfterComma
     gameArea = [
         13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,
         12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,12,13,14,
@@ -75,6 +75,7 @@ window.onload = function() {
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,18,19,
       19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,
     ];
+    // jscs:enable requireSpaceAfterComma
 
 
 
@@ -82,13 +83,13 @@ window.onload = function() {
     * Draw the initial gameplan
     */
     function draw(gameArea, gameBlocks) {
-        var i,
-            element,
-            block;
-    
+        var i;
+        var element;
+        var block;
+
         console.log("Drawing gamearea.");
-    
-        for(i = 0; i < gameArea.length; i++) {
+
+        for (i = 0; i < gameArea.length; i++) {
             element = document.createElement("div");
             element.innerHTML = "";
             block = (gameBlocks[i] ? " b" + gameBlocks[i] : "");
@@ -102,5 +103,5 @@ window.onload = function() {
 
     draw(gameArea, gameBlocks);
 
-    console.log("Everything is ready.");  
+    console.log("Everything is ready.");
 };
