@@ -12,10 +12,10 @@ $(document).ready(function(){
         $('#quote').fadeOut(function() {
           $('#quote').html(data.quote).fadeIn();
         });
-        console.log('.ajax() request returned successfully.');    
+        console.log('.ajax() request returned successfully.');
       },
       error: function(jqXHR, textStatus, errorThrown){
-        console.log('.ajax() request failed: ' + textStatus + ', ' + errorThrown);    
+        console.log('.ajax() request failed: ' + textStatus + ', ' + errorThrown);
       },
     });
   });
@@ -25,10 +25,9 @@ $(document).ready(function(){
       $('#quote').fadeOut(function() {
         $('#quote').html(data.quote).fadeIn();
       });
-      console.log('.getJSON() request returned successfully.');    
+      console.log('.getJSON() request returned successfully.');
     });
   });
 
   console.log('Everything is ready.');
 });
-
